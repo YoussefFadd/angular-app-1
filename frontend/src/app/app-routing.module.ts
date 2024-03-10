@@ -92,16 +92,7 @@ const routes: Routes = [
     loadChildren: () => import('./modules/general/about/about.module')
       .then(mod => mod.AboutModule)
   },
-  {
-    path: 'login',
-    loadChildren: () => import('./modules/general/login/login.module')
-      .then(mod => mod.LoginModule)
-  },
-  {
-    path: 'signup',
-    loadChildren: () => import('./modules/general/signup/signup.module')
-      .then(mod => mod.SignupModule)
-  },
+ 
   { path: '**', component: NotFoundComponent }
 ];
 
